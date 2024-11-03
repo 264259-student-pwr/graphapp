@@ -1,0 +1,13 @@
+<h1>Graph Details</h1>
+<h2>Nodes</h2>
+<ul>
+    {% for node in graph.nodes %}
+    <li>{{ node }}: {{ graph.nodes[node]['pos'] }}</li>
+    {% endfor %}
+</ul>
+<h2>Edges</h2>
+<ul>
+    {% for edge in graph.edges %}
+    <li>{{ edge }}: {{ graph.edges[edge]['weight'] }}</li>
+    {% endfor %}
+</ul>
